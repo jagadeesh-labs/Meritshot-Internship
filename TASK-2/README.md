@@ -13,13 +13,15 @@ Customer churn is a major challenge for telecom companies as customer attrition 
 
 ## Project Structure
 
+## Project Structure
+
 ```text
 TASK-2/
 │
 ├── Customer_Churn_Prediction.ipynb
+├── Customer_Churn_Prediction_Report.pdf
 ├── README.md
 ├── requirements.txt
-├── Customer_Churn_Prediction_Report.pdf
 │
 ├── data/
 │   ├── Telco-Customer-Churn.csv
@@ -27,11 +29,16 @@ TASK-2/
 │
 └── images/
     ├── churn_distribution.png
-    ├── contract_churn.png
-    ├── monthly_charge_vs_churn.png
-    ├── correlation_heatmap.png
-    └── confusion_matrix.png
+    ├── churn_rate_by_contract.png
+    ├── monthly_charges_vs_churn.png
+    ├── feature_correlation.png
+    ├── model_metrics_comparison.png
+    ├── model_f1_comparison.png
+    ├── confusion_matrix.png
+    ├── cleaned_dataset_shape.jpg
+    └── model_results.jpg
 ```
+
 
 ## Installation
 
@@ -81,13 +88,14 @@ Execute the notebook cells sequentially to reproduce the analysis and model eval
 
 ## Results
 
-The developed models were evaluated to predict customer churn and identify important factors influencing customer attrition. Key insights and detailed analysis are provided in `Customer_Churn_Prediction_Report.pdf`.
+The developed machine learning models were evaluated to predict customer churn and identify factors influencing customer retention. Exploratory data analysis and model evaluation revealed that contract type and monthly charges significantly affect customer churn. Logistic Regression achieved the highest F1 Score and was selected as the final model. Detailed methodology, visualizations, and findings are presented in `Customer_Churn_Prediction_Report.pdf`.
 
 ## Repository Contents
 
-* `Customer_Churn_Prediction.ipynb` : Complete implementation.
-* `data/` : Raw and cleaned datasets.
-* `images/` : Visualizations and confusion matrix.
-* `requirements.txt` : Project dependencies.
-* `Customer_Churn_Prediction_Report.pdf` : Detailed report and findings.
+* `Customer_Churn_Prediction.ipynb` : Complete implementation of data preprocessing, exploratory data analysis, model training, and evaluation.
+* `data/` : Raw and cleaned Telco Customer Churn datasets.
+* `images/` : Visualizations generated during exploratory analysis and model evaluation.
+* `requirements.txt` : Required Python dependencies.
+* `Customer_Churn_Prediction_Report.pdf` : Comprehensive report containing methodology, results, key findings, and conclusions.
+
 
